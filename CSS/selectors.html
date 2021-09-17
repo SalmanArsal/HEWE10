@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+
+    <style>
+        /* TagName selector will select all the occurences of html elements by their tagNames  */
+        h1{
+            color: rgb(235, 37, 70);
+        }
+
+        /* Class Selector will select all the occurences of html elements by their ClasName.
+        Here we will target html elemnts by class Attribute.
+        dot(.) is used to represent the classnames in css.
+        ClassNames are case-senstive.
+        Once the class is created we can use this class in any of the html elements to apply properties inside the class.
+        we can pass multiple classes to a html element*/
+
+        .Jspara{
+            color: grey;
+        }
+
+        .align{
+            text-align: center;
+        }
+
+        /* Id Selector - Id should be unique in all the html elements
+         Here we will target html elemnts by Id Attribute.
+         # is used to represent the IdNames in css.
+         IdNames are case-senstive.
+         As the id's should be unique from one tag to another we cannot use idNames in multiple html elements
+         so we use this id selector to design a perticular section of web page like footer , header , navigation bar , a section etc.....
+         we cannot pass multiple id's to a html element*/
+
+        #wrapper{
+            background-color: rgb(160, 212, 221);
+        }
+
+        #border{
+            border-style: solid;
+            border-color: purple;
+            border-width: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1 class="align">CSS SELECTORS</h1>
+    <h3>Types of Selectors:</h3>
+    <p class="Jspara align">We can select html elements to apply css in these following ways</p>
+    <p>1.TagName selector / Element selector <br>
+       2.Class Selector <br>
+       3.Id Selector <br>
+       4.Generic Selector <br>
+       5.Group selector <br>
+       6.Attribute Selectors <br>
+       7.Universal Selector 
+    </p>
+
+    <section id="wrapper">
+        <h1 class="align">JSPIDERS</h1>
+        <p class="Jspara align">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, porro adipisci reiciendis possimus consectetur provident quo architecto consequatur ex placeat, nesciunt delectus earum ea amet tenetur quis! Adipisci, magnam nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nulla sint sunt minima. Porro officia laudantium ipsum tempora repellat, dolore consectetur impedit nesciunt ratione reiciendis culpa, libero debitis, ea soluta!</p>
+        <button id="border">Get Started</button>
+    </section>
+    
+</body>
+</html>

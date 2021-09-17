@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials on HTML</title>
+</head>
+<body>
+
+    <fieldset>
+        <!-- fieldset tag i st provide border/field around a form -->
+        <legend>
+            <!-- legend tag is used to provide caption to fieldset  -->
+            SIGN-UP</legend>    
+        <form>
+            <!-- form tag is used to add html forms , froms are used to get the info about the users , through froms we can submit the data into the server-->
+    
+            <div>
+                <label for="username">Username:</label>
+                <!-- label tag is used to add labels to the input fields  -->
+                <input id="username" name="Username"  type="text" placeholder="Enter Username" size="30" maxlength="8" minlength="3" value="" required>
+            </div>
+    
+            
+                <!-- input tag is used to add filds(text , password , number , email etc.....) in html forms -->
+    
+                <!-- A text field can accept numbers , alphabets or special charecters -->
+    
+                <!-- name - is mandatory attribute to submit any form fields -->
+    
+                <!-- type - to specify the type of the input filed - text , password , submit , email etc... -->
+    
+                <!-- placeholder - is used to pass user defined labels to the input fields -->
+    
+                <!-- size - is to set the width of input fields  -->
+                
+                <!-- maxlength - to set the maximum charecter size for input value  -->
+                
+                <!-- minlength -to set the minimum charecter size for input value -->
+                
+                <!-- value - to set the default value for the iput fields when the page s loaded in the browser -->
+                
+                <!-- required - to make input fields mandatory  -->
+    <br>
+               <div>
+                <label for="password">Password:</label>  
+                <input id="password" type="password" placeholder="Enter Password" size="30" name="password"
+                required>
+               </div>
+
+    <br>
+               <div>
+                   <label for="email">Email:</label>
+                   <input type="email" name="email" placeholder="enter email..." id="email">
+               </div>
+
+    <br>
+               <div>
+                   <label for="">Select no of products to order</label>
+                    <input type="number" name="number" max="10" min="1">
+               </div>
+    
+    <br>
+
+               <div>
+                   <label for="">Search field</label>
+                   <input type="search" placeholder="Search Something" name="search">
+               </div>
+
+    <br>
+               <div>
+                   <label for="">Select Your Birthdate</label>
+                   <input type="date" name="birthdate">
+               </div>
+
+    <br>
+               <div>
+                   <label for="">Select Month</label>
+                   <input type="month" name="Month">
+               </div>
+
+    <br>
+               <div>
+                   <label for="">Select Week:</label>
+                   <input type="week" name="week">
+               </div>
+
+    <br>
+               <div>
+               <!-- radio should be used when the user has to select only one option from multiple -->
+                   <label for="">Male</label>
+                   <input type="radio" name="gender">
+
+                   <label for="">Female</label>
+                   <input type="radio" name="gender">
+
+                   <label for="">Others</label>
+                   <input type="radio" name="gender">
+               </div>
+    
+    <br>
+               <div>
+                   <!-- checkbox is used to select multiple options from the given options -->
+                   Biriyani: <input type="checkbox" name="food"> <br>
+                   Eggrice: <input type="checkbox" name="food"> <br>
+                   gobi: <input type="checkbox" name="food">
+               </div>
+
+    <br>
+                <h3>select only one Option</h3>
+               <div>
+                    <select name="Non-veg" >
+                        <option value="">-select food -</option>
+                        <option value="Biriyani">Biriyani</option>
+                        <option value="Chicken Kabab">Chicken Kabab</option>
+                        <option value="chickenrice">chicken rice</option>
+                        <option value="lollipop">lollipop</option>
+                    </select>
+               </div>
+<br>
+               <h3>select multiple Options</h3>
+               <!-- to select multiple options we need to use ctrl button or drag options -->
+                <div>
+                    <select multiple name="Non-veg" >
+                        <option value="">-select food -</option>
+                        <option value="Biriyani">Biriyani</option>
+                        <option value="Chicken Kabab">Chicken Kabab</option>
+                        <option value="chicken rice">chicken rice</option>
+                        <option value="lollipop">lollipop</option>
+                    </select>
+                </div>
+
+            
+                <input type="submit"> <!-- to add submit button-->
+                <input type="reset">
+                <input type="button" value="Dead button">
+
+                <div>
+                      <!-- by default button type is submit  -->
+                    <button type="submit">SignUp</button>
+                    <button type="reset">Reset</button>
+                    <button type="button">Dead Button</button>
+                </div>
+
+                <div>
+                    <textarea name="feedback" cols="100" rows="15" placeholder="write u r valuable feedback"></textarea>
+                    <!-- height and width of textarea is depends on rows and cols -->
+                </div>
+        </form>
+    
+    </fieldset>
+    
+</body>
+</html>

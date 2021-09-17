@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials on CSS</title>
+
+    <!-- importing external css file by using link tag -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <style>
+        h2{
+          color : green;
+          text-decoration:underline 
+        }
+    </style>
+</head>
+<body>
+        <h2>Intoduction to CSS</h2>
+
+        <pre>
+            it was introduced by Hakon Wium Lie
+            CSS - Cascading Style Sheet
+            It is used to add designs to the web pages
+        </pre>
+
+        <p>We can  add designs or styles in 3 ways / 3types; <br>
+            1.Inline CSS <br> 
+            2.Internal CSS <br>
+            3.External CSS <br>
+        </p>
+
+        <h1>Inline Css:</h1>
+        <p>In inline Css we use <mark>style attribute</mark> to apply CSS designs/styles to any perticular html element</p>
+        <p><b>NOTE:</b>Semicolon is mandatory when we are passing more than one css property , so each and every css property should be terminated with the semicolon <br>
+        But for the last css property semicolon is not mandatory</p>
+        <pre>
+            <b>Syntax:
+                   style = "CssPropertyName : Value ;" </b>
+
+
+            <b>Syntax to pass multiple css properties:
+                   style = "CssPropertyName:Value ; CssPropertyName:Value" </b>       
+        </pre>
+            <h1 style="color : hotpink">JSPIDERS</h1>
+
+            <p style="color: orangered;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, enim!</p>
+
+            <img style="height: 250px ; width:300px" src="https://source.unsplash.com/1600x900/?nature,water" alt="">
+
+        <h2>Simply to check</h2>
+        <h2>Internal Css:</h2>
+        <p>In internal css we use <mark> style tag</mark> to apply CSS designs/styles to html elements</p>
+        <p>In internal css we need to select required HTML elements to apply css designs <br>
+            In internal css we can select the html elements in multiple ways , here it will select all the occurences of a html element</p>
+
+            <pre>
+                <b>Syntax:
+                     &ltstyle&gt 
+                            selector{
+                                CssPropertyName : Value ; 
+                            }
+                    &lt/style&gt
+                </b>   
+                
+                <b>Syntax to pass multiple css properties:
+                    &ltstyle&gt 
+                           selector{
+                               CssPropertyName : Value ;
+                               CssPropertyName : Value 
+                           }
+                   &lt/style&gt
+               </b>   
+            </pre>
+
+
+            <h2>External Css:</h2>
+            <p>In External css we will use external files of .css extensions and import that external file in the html file where we need to apply css designs</p>
+            <p>In External css we need to select required HTML elements to apply css designs <br>
+                In External css we can select the html elements in multiple ways , here it will select all the occurences of a html element</p>
+
+            <pre>
+                <b>Syntax:
+                            selector{
+                                CssPropertyName : Value ; 
+                            }
+                </b>   
+                
+                <b>Syntax to pass multiple css properties:
+                           selector{
+                               CssPropertyName : Value ;
+                               CssPropertyName : Value 
+                           }
+               </b>   
+            </pre>
+    
+</body>
+</html>
